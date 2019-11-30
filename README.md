@@ -59,3 +59,9 @@ Good user experience – easy to use, well-designed frontend with good feedback 
 [6] Keras Team. Keras: The python deep learning library.  https://keras.io/.
 
 [7] Christopher J.C. Burges Yann LeCun, Corinna Cortes. The mnist database of handwritten digits. http://yann.lecun.com/exdb/mnist/.
+
+
+**Project References**
+
+flask.py        https://palletsprojects.com/p/flask/
+DigitRec.ipynb  https://www.youtube.com/watch?v=wQ8BIBpya2k by sentdex
