@@ -1,4 +1,4 @@
-**EMERGING TECHNOLOGIES ASSESSMENT 2019**
+﻿**EMERGING TECHNOLOGIES ASSESSMENT 2019**
 
 **Instructions**
 ```
@@ -65,3 +65,9 @@ Good user experience – easy to use, well-designed frontend with good feedback 
 
 flask.py        https://palletsprojects.com/p/flask/
 DigitRec.ipynb  https://www.youtube.com/watch?v=wQ8BIBpya2k by sentdex
+https://keras.io/
+https://www.tensorflow.org/guide/keras/overview
+https://www.python.org/
+https://web.microsoftstream.com/video/8e965392-ccc2-4faa-a755-8d86de6a91d6?referrer=https:%2F%2Flearnonline.gmit.ie%2Fcourse%2Fview.php%3Fid%3D135
+https://github.com/ianmcloughlin/jupyter-teaching-notebooks/blob/master/keras-neurons.ipynb
+https://www.ics.uci.edu/~mohamadt/keras_mnist.html#Load-data-set
