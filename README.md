@@ -71,3 +71,6 @@ https://www.python.org/
 https://web.microsoftstream.com/video/8e965392-ccc2-4faa-a755-8d86de6a91d6?referrer=https:%2F%2Flearnonline.gmit.ie%2Fcourse%2Fview.php%3Fid%3D135
 https://github.com/ianmcloughlin/jupyter-teaching-notebooks/blob/master/keras-neurons.ipynb
 https://www.ics.uci.edu/~mohamadt/keras_mnist.html#Load-data-set
+<!-- https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+<!-- adapted from https://github.com/bencentra/canvas/blob/master/signature/signature.html -->
+// adapted from https://github.com/bencentra/canvas/blob/master/signature/signature.js
