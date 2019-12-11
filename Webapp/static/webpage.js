@@ -1,23 +1,32 @@
-(function() {
+
 	
 	// Get a regular interval for drawing to the screen
 	window.requestAnimFrame = (function (callback) {
 		return window.requestAnimationFrame || 
-					window.webkitRequestAnimationFrame ||
-					window.mozRequestAnimationFrame ||
-					window.oRequestAnimationFrame ||
-					window.msRequestAnimaitonFrame ||
-					function (callback) {
-					 	window.setTimeout(callback, 1000/60);
-					};
+		window.webkitRequestAnimationFrame ||
+		window.mozRequestAnimationFrame ||
+		window.oRequestAnimationFrame ||
+		window.msRequestAnimaitonFrame ||
+		function (callback) {
+			window.setTimeout(callback, 1000/60);
+		};
 	})();
 
 	// Set up the canvas
 	var canvas = document.getElementById("sig-canvas");
 	var ctx = canvas.getContext("2d");
+	var dataToSend;
+	
+	var drawing = false;
+	var mousePos = { x:0, y:0 };
+	var lastPos = mousePos;
+	w = canvas.height;	
+	h = canvas.width;
+
 	ctx.strokeStyle = "#222222";
 	ctx.lineWidth = 20;
-
+	
+	
 	//  Set up the UI
 	//	var sigText = document.getElementById("sig-dataUrl");
 	var sigImage = document.getElementById("sig-image");
@@ -28,12 +37,7 @@
 		//sigText.innerHTML = "Data URL for your signature will go here!";
 		sigImage.setAttribute("src", "");
 	}, false);
-	submitBtn.addEventListener("click", function (e) {
-		var dataUrl = canvas.toDataURL();
-		//sigText.innerHTML = dataUrl;
-		sigImage.setAttribute("src", dataUrl);
-	}, false);
-
+	
 	// Set up mouse events for drawing
 	var drawing = false;
 	var mousePos = { x:0, y:0 };
@@ -106,6 +110,18 @@
 			y: touchEvent.touches[0].clientY - rect.top
 		};
 	}
+	
+	// Gives regular intervals for draw animation
+	window.requestAnimFrame = (function (callback) {
+	  return window.requestAnimationFrame || 
+		 window.webkitRequestAnimationFrame ||
+		 window.mozRequestAnimationFrame ||
+		 window.oRequestAnimationFrame ||
+		 window.msRequestAnimaitonFrame ||
+		 function (callback) {
+			window.setTimeout(callback, 1000/60);
+		 };
+	})();
 
 	// Draw to the canvas
 	function renderCanvas() {
@@ -128,4 +144,26 @@
 		renderCanvas();
 	})();
 
-})();
+	// Predict OnClick
+	$("#predictBtn").click(function (e) {
+	
+		// Prevent the form submitting.
+		e.preventDefault();
+	  
+	  
+		// Create a dictonary to bundle data to send
+	    dataToSend = {"imageData": JSON.stringify(canvas.toDataURL())};
+		
+		console.log(canvas.toDataURL());
+		
+		// Print the contents of the image to the javascript console
+		$.post("/uploadimage", dataToSend, function(data){
+				console.log(data);
+			$("#predictText").text(data.message);
+		});
+		
+	});
+	
+
+	
+

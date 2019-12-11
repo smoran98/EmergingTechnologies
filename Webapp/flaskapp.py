@@ -11,7 +11,7 @@ import tensorflow as tf
 import logging
 from tensorflow import keras
 from flask import render_template
-#from PIL import ImageOps, Image
+from PIL import ImageOps, Image
 
 
 # Create the web application.
