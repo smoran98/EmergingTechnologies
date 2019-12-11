@@ -63,7 +63,7 @@ def reshape_image():
 
 def load_model():
   # import model
-  json_model = open('DigitRec.json','r')
+  json_model = open('model/DigitRec.json','r')
   load_model_json = json_model.read()
   json_model.close()
   loaded_model = keras.models.model_from_json(load_model_json)
