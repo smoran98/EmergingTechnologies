@@ -159,7 +159,7 @@
 		// Print the contents of the image to the javascript console
 		$.post("/uploadimage", dataToSend, function(data){
 				console.log(data);
-			$("#predictText").text(data.message);
+			$("#predictTxt").text("Prediction: "+data["prediction"]);
 		});
 		
 	});
