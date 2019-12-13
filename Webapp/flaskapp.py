@@ -49,8 +49,9 @@ def uploadimage():
   prediction_array = model.predict(image_to_predict)
   prediction = np.argmax(prediction_array)
   
+  print(prediction)
   # Return a response
-  return {"prediction": prediction}
+  return {"prediction": str(prediction)}
 
 
 def reshape_image():
