@@ -24,16 +24,6 @@ flask run
 
 ```
 
-**Tutorial Video Requirements**
-```bash
-•	Show and give a very brief overview of repository page in GitHub - running through your README, files and folders.
-•	Give a brief overview of your web application code.
-•	Give a brief demonstration of your web application running.
-•	Give a brief overview of your notebook.
-
-•	It would greatly help if you have all of the pages, codes and applications already open and running before you press record so that you can easily flick through them.
-
-```
 
 **Minimum Viable Project**
 ```bash
@@ -71,6 +61,16 @@ Simple, straight-forward code with appropriate comments and decent architecture.
 
 20% User exp. 
 Good user experience – easy to use, well-designed frontend with good feedback to the user and efficient submission to the model.
+```
+
+**Tutorial Video Requirements**
+```bash
+•	Show and give a very brief overview of repository page in GitHub - running through your README, files and folders.
+•	Give a brief overview of your web application code.
+•	Give a brief demonstration of your web application running.
+•	Give a brief overview of your notebook.
+
+•	It would greatly help if you have all of the pages, codes and applications already open and running before you press record so that you can easily flick through them.
 ```
 
 **References**
