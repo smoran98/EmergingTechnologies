@@ -1,13 +1,31 @@
 ﻿**EMERGING TECHNOLOGIES ASSESSMENT 2019**
 
 **Instructions**
-```
+```bash
 This assessment concerns the well-known MNIST [7] dataset and the Python [1] packages
 keras [6], flask [5], and jupyter [4].
 ```
 
-**Minimum Viable Project**
+**How to get started & Run the app**
+```bash
+$ git clone https://github.com/smoran98/EmergingTechnologiesG00338607
+
+Download and install Anaconda
+Requirements:
+$ conda install -c anaconda flask
+$ conda install -c conda-forge keras tensorflow
+$ conda install -c anaconda pillow
+$ conda install -c conda-forge opencv
+
+open Terminal(CMD)
+cd Webapp
+set FLASK_APP=flaskapp.py
+flask run
+
 ```
+
+**Minimum Viable Project**
+```bash
 The minimum standard for this assessment is a git repository containing a README file
 written in Markdown [3], a jupyter notebook containing code to train your model, and
 a flask web application that allows users to recognise digits using your trained model.
@@ -19,7 +37,7 @@ application will provide a good user experience
 ```
 
 **Marking scheme**
-```
+```bash
 Presentation
 
 20% Presentation 
@@ -45,7 +63,7 @@ Good user experience – easy to use, well-designed frontend with good feedback 
 ```
 
 **References**
-```
+```bash
 [1] Python Software Foundation. Welcome to python.org.  https://www.python.org/.
 
 [2] GMIT. Quality assurance framework.  https://www.gmit.ie/general/quality-assurance-framework.
@@ -63,7 +81,7 @@ Good user experience – easy to use, well-designed frontend with good feedback 
 
 
 **Project References**
-```
+```bash
 https://palletsprojects.com/p/flask/
 
 https://www.youtube.com/watch?v=wQ8BIBpya2k by sentdex
