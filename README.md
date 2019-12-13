@@ -115,3 +115,8 @@ https://github.com/bencentra/canvas/blob/master/signature/signature.html
 
 https://github.com/bencentra/canvas/blob/master/signature/signature.js
 ```
+
+**Author**
+```bash
+https://github.com/smoran98/
+```
